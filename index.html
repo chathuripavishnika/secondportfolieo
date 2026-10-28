@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar bg-1 fg-2">
+
+        <div class="container-fluid">
+            <button class="btn-icon navbar-toggler" type="button" data-bs-toggle="drawer"
+                data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" aria-hidden="true"></span>
+            </button>
+            <img class="YoutubeIcon"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLWr0r8Zu5_JET9YnVX1zt2CKd3Isw5Raz9uCp4-yjWQ&s=10"
+                width="60" alt="">
+            <h4>YouTube</h4>
+            <form class="hstack gap-3" role="search">
+                <input class="form-control" type="search" placeholder="Search" aria-label="Search" />
+                <button class="btn-solid btn-icon theme-secondary" type="submit">
+                    <svg class="bi" width="2" height="5">
+                        <use href="#search" />
+                    </svg>
+                    <img class="Voiceicon"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRHK9QB8GhrjMXtMa1JPfbfSscmYezYgv-y2NdvuICig&s=10"
+                        width="30">
+                    <button class="btn-solid btn-styled theme-secondary">+Create</button>
+                    <img class="Belicon"
+                        src="data:image/png;base64,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"
+                        width="60" alt="">
+                    <img class="Profile"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXvTuMbmh1lXeXNaT3ohFH_yqBvWR1tTlGK_E6RIHjsg&s=10"
+                        width="60" alt="">
+                    <a class="navbar-brand" href="#">Profile</a>
+
+                    <dialog class="drawer drawer-end" tabindex="-1" id="navbarTogglerDemo03"
+                        aria-labelledby="navbarTogglerDemo03Label">
+                        <div class="drawer-header">
+                            <h5 class="drawer-title" id="navbarTogglerDemo03Label">Menu</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="drawer"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="drawer-body">
+                            <ul class="navbar-nav me-auto mb-2">
+                                <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a>
+                                </li>
+                                <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+                                <li class="nav-item"><a class="nav-link disabled" aria-disabled="true">Disabled</a></li>
+                            </ul>
+                            <form class="d-flex" role="search">
+                                <input class="form-control me-2" type="search" placeholder="Search"
+                                    aria-label="Search" />
+                                <button class="btn-outline theme-success" type="submit">Search</button>
+                            </form>
+                        </div>
+                    </dialog>
+        </div>
+    </nav>
+
+    <nav class="navbar">
+        <div class="nav-buttons">
+
+            <button style="color: aliceblue; background-color: black;">All</button>
+            <button>Music</button>
+            <button>Mixes</button>
+            <button>Bowling</button>
+            <button>Shreya Ghoshal</button>
+            <button>Gaming</button>
+            <button>Telenovelas</button>
+            <button>Indian POP music</button>
+            <button>Java</button>
+            <button>Live</button>
+            <button>Arigit Singh</button>
+            <button>Cricket Batting stroke</button>
+            <button>></button>
+        </div>
+    </nav>
+    <br>
+    <div class="row">
+  <div class="sm:col-6 mb-3 sm:mb-0">
+    <div class="card">
+      <div class="card-body">
+       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6-SrWJZJ1FeVRpYazOfbF7X8q20ebjyRMaV8BcXxLtw&s" width="250" alt="">
+        <p class="card-text">Java Full course for Beginners.YouTube.lk</p>
+        <a href="#" class="btn-solid theme-primary">>View</a>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="sm:col-6">
+    <div class="card">
+      <div class="card-body">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGFiW8ySHBsba1UT66nSPtxsZPKwr_Nw3UODUyIH-miQ&s=10" width="250" alt="">
+        <p class="card-text">Java Developer stock video.YouTube.lk</p>
+        <a href="#" class="btn-solid theme-primary">Licenseable</a>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+
+</html>

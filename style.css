@@ -1,0 +1,41 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:white;
+    padding: 8px 20px;
+}
+
+
+.nav-buttons {
+    display: flex;
+    gap: 7px;
+}
+
+.nav-buttons button {
+    padding: 8px 7px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.nav-buttons button:hover {
+    background-color:white;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 2px;
+}
+
+.my-image {
+    width: 300px;
+    float: right;
+}
