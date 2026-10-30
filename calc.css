@@ -11,7 +11,7 @@ body {
 .calculator {
     width: 300px;
     padding: 15px;
-    background-color: black;
+    background-color:pink;
 }
 
 .buttons {
@@ -23,7 +23,7 @@ body {
 .buttons button {
     padding: 20px;
     color: black;
-    background-color: azure;
+    background-color:white;
     font-size: 20px;
 }
 
@@ -31,7 +31,7 @@ body {
     width: 100%;
     height: 60px;
     margin-bottom: 10px;
-    background-color: azure;
+    background-color: white;
     color: black;
     font-size: 25px;
 }
