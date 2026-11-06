@@ -34,3 +34,11 @@ button{
     margin-bottom: 25px;
     box-sizing: border-box;
 }
+
+#result{
+    width: 80%;
+    height: 40px;
+    font-size:30px ;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
