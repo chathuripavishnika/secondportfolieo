@@ -1,26 +1,25 @@
-let display = document.getElementById("display");
-        function pressNumber(value){
-             display.value=display.value + value;
+function pressNumber(num) {
+    document.getElementById("display").value += num;
+}
 
-        }
-    //    function appendValue(Value){
-    //         display.value=display.value + value;
+function clearDisplay() {
+    document.getElementById("display").value = "";
+}
 
-    //    }
+function deleteLast() {
+    let display = document.getElementById("display");
 
-       function clearDisplay(){
-            display.value="";
-       }
+    display.value = display.value.slice(0, -1);
+}
 
-    //    function DeleteLast(){
-    //         display.value=display.value.slice(0,-1);
-    //    }
+function chooseOperator(operator) {
+    document.getElementById("display").value += operator;
+}
 
-       function calculate(){
-        try{
-            display.value=eval(display.value);
-        }catch(error){
-                display.value="error"
-        }
-       }
+function calculate() {
+    let display = document.getElementById("display");
+
+    display.value = eval(display.value);
+}
+
         
