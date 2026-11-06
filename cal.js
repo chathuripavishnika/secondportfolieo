@@ -22,4 +22,10 @@ function calculate() {
     display.value = eval(display.value);
 }
 
+function calculate(){
+     let display=document.getElementById("display");
+     let expression=display.value;
+     let answer=eval(expression);
+     document.getElementById("result").value=answer;
+}
         
